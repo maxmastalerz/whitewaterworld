@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>WhitewaterWorld</title>
+		{{> head }}
+		<link rel="stylesheet" href="/stylesheets/map.css">
+	</head>
+
+	<body>
+		<div class="site-container">
+			<div class="site-pusher">
+
+			{{> header }}
+
+			<div class="site-content">
+				<div class="mycontainer">
+					<div id="left" class="center">
+						<h2>WHITEWATER<br>AND MORE</h2>
+					</div>
+
+					
+					<div id="left-corner"></div>
+					<div id="right-corner"></div>
+					<div id="right" class="style-2">
+						<h3 class="center">Welcome to our community</h3>
+						<p class="justify">WhitewaterWorld is a new site to meet all of our boating needs. River beta, gear reviews, discussion, and more. We've got everything you need! If you feel that there is room for improvement, please <a href="">post your suggestions</a>. The highest rated suggestions will be considered for implementation. SYOTR.</p>
+						<p>- Max Mastalerz</p>
+					</div>
+
+					<div id="map" class="box"></div>
+					<div id="legend">
+						<img src="/images/map-icons/lightgreen.png">Below Recommended<br>
+						<img src="/images/map-icons/green.png">Running<br>
+						<img src="/images/map-icons/darkgreen.png">Above Recommended<br>
+						<img src="/images/map-icons/black.png">Unknown<br>
+					</div>
+					<div class="spacer"></div>
+					
+				</div>
+				{{> footer }}
+			</div>
+
+
+			<div class="site-cache" id="site-cache"></div>
+			</div> <!-- END site-pusher -->
+		</div> <!-- END site-container -->
+	</body>
+
+	<script src="/javascripts/map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNkUkaDR7_q-PBDqr_e4JvlX2Tz6mPGYM&callback=initMap" async defer></script>
+</html>

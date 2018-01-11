@@ -1,0 +1,26 @@
+<footer class="footer-distributed">
+	<div class="footer-right">
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-youtube"></i></a>
+		<a href="https://github.com/maxmastalerz"><i class="fa fa-github"></i></a>
+		<a href="#"><i class="fa fa-paypal"></i></a>
+	</div>
+	<div class="footer-left">
+		<p class="footer-links">
+			<a href="#">Privacy &amp; Terms</a> ·
+			<a href="#">Sitemap</a> ·
+			<a href="/change-log">Change Log</a> ·
+			<a href="#">Contribute</a> <!--·
+			<a href="#" id="view-full">Full Site</a>-->
+		</p>
+		<p id="changeMe"></p>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/javascripts/app.js"></script>
+<script>
+	$('#view-full').bind('click', function(){ 
+		$('meta[name="viewport"]').attr('content', 'width=980');
+	});
+</script>
